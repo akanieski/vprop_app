@@ -61,9 +61,6 @@
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\misc\resetProjects.js" afterPath="" />
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\playswith.html" afterPath="" />
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\propagateClusterUpdate.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/bower.json" afterPath="$PROJECT_DIR$/www/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/config.xml" afterPath="$PROJECT_DIR$/www/config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
     </list>
     <ignored path="vprop_app.iws" />
     <ignored path=".idea/workspace.xml" />
