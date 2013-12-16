@@ -8,52 +8,53 @@ var init_angular = function () {
     app.account_info = localStorage.getItem('account_info');
     app.account_info = app.account_info ? JSON.parse(app.account_info) : {};
 
-    if (app.account_info.user && app.account_info.user.id) {
-        // Logged In!
-        //window.location = '/#/dashboard';
-    } else {
-        // Not Logged In!
-        //window.location = '/#/login';
-    }
-app.ng = angular.module('VPropApp', ['ngRoute']);
 
-        app.ng
-            .config(function ($routeProvider) {
+    app.ng = angular.module('VPropApp', ['ngRoute']);
 
-                $routeProvider
-                    .when('/', {
-                        templateUrl: 'views/main.html',
-                        controller: 'MainCtrl',
-                        requiresLogin: true
-                    }).when('/login', {
-                        templateUrl: 'views/login.html',
-                        controller: 'LoginCtrl'
-                    })
-                    .otherwise({
-                        redirectTo: '#dashboard'
-                    });
+    app.ng
+        .config(function ($routeProvider) {
 
-            })
-            .config(function ($httpProvider) {
-                //Enable cross domain calls
-                $httpProvider.defaults.useXDomain = true;
+            $routeProvider
+                .when('/', {
+                    templateUrl: 'views/main.html',
+                    controller: 'MainCtrl',
+                    requiresLogin: true
+                }).when('/login', {
+                    templateUrl: 'views/login.html',
+                    controller: 'LoginCtrl'
+                })
+                .otherwise({
+                    redirectTo: '#dashboard'
+                });
 
-                //Remove the header containing XMLHttpRequest used to identify ajax call
-                //that would prevent CORS from working
-                delete $httpProvider.defaults.headers.common['X-Requested-With'];
-            })
-            .run(function ($rootScope, $http) {
-                $rootScope.api_url = 'http://dev.virtualproperti.es';
-                $rootScope.$on('$routeChangeStart', function (evt, next_route, current_route) {
+        })
+        .config(function ($httpProvider) {
+            //Enable cross domain calls
+            $httpProvider.defaults.useXDomain = true;
 
-                    // Check the route access in relation to logged in status
-                    if (next_route.requiresLogin && !$rootScope.logged_in) {
+            //Remove the header containing XMLHttpRequest used to identify ajax call
+            //that would prevent CORS from working
+            delete $httpProvider.defaults.headers.common['X-Requested-With'];
+        })
+        .run(function ($rootScope, $http) {
+            $rootScope.api_url = 'http://dev.virtualproperti.es';
+            $rootScope.$on('$routeChangeStart', function (evt, next_route, current_route) {
+
+                // Check the route access in relation to logged in status
+                if (next_route.requiresLogin && !$rootScope.logged_in) {
+                    if (app.account_info.user && app.account_info.user.id) {
+                        // Logged In!
+                        //window.location = '/#/dashboard';
+                        $rootScope.logged_in = true;
+                    } else {
+                        // Not Logged In!
                         event.preventDefault();
                         window.location = '#login';
                     }
-                });
-
+                }
             });
+
+        });
 
 
 
