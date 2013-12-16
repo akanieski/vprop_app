@@ -16,9 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "angularjs": "*",
     "bootbox": "~4.1.0",
     "bootstrap": "~3.0.3",
-    "jquery": "~2.0.3"
+    "jquery": "~2.0.3",
+    "angular-latest": "~1.2.5"
   }
 }
