@@ -8,18 +8,14 @@ var init_angular = function () {
     app.account_info = localStorage.getItem('account_info');
     app.account_info = app.account_info ? JSON.parse(app.account_info) : {};
 
-    if (account_info.user && account_info.user.id) {
+    if (app.account_info.user && app.account_info.user.id) {
         // Logged In!
-        window.location = '/#/dashboard';
+        //window.location = '/#/dashboard';
     } else {
         // Not Logged In!
-        window.location = '/#/login';
+        //window.location = '/#/login';
     }
-
-    js_loader([
-        '/js/controllers/site.js',
-    ], function () {
-        app.ng = angular.module('VPropApp', []);
+app.ng = angular.module('VPropApp', ['ngRoute']);
 
         app.ng
             .config(function ($routeProvider) {
@@ -34,7 +30,7 @@ var init_angular = function () {
                         controller: 'LoginCtrl'
                     })
                     .otherwise({
-                        redirectTo: '/'
+                        redirectTo: '#dashboard'
                     });
 
             })
@@ -47,22 +43,21 @@ var init_angular = function () {
                 delete $httpProvider.defaults.headers.common['X-Requested-With'];
             })
             .run(function ($rootScope, $http) {
-                $rootScope.api_url = 'http://127.0.0.1:5000';
+                $rootScope.api_url = 'http://dev.virtualproperti.es';
                 $rootScope.$on('$routeChangeStart', function (evt, next_route, current_route) {
 
                     // Check the route access in relation to logged in status
                     if (next_route.requiresLogin && !$rootScope.logged_in) {
                         event.preventDefault();
-                        window.location = '/#/login';
+                        window.location = '#login';
                     }
                 });
 
             });
 
-    });
 
 
-}
+};
 function js_loader(srces, fn) {
     if (typeof srces == 'string') {
         load(srces, fn);
