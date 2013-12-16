@@ -1,0 +1,24 @@
+{
+  "name": "vprop_phonegap",
+  "version": "0.0.0",
+  "homepage": "https://github.com/akanieski/vprop_app",
+  "authors": [
+    "Andrew Kanieski <andrew.legacy@gmail.com>"
+  ],
+  "description": "Virtual Properties Phone Gap App",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "*",
+    "bootbox": "~4.1.0",
+    "bootstrap": "~3.0.3",
+    "jquery": "~2.0.3"
+  }
+}
