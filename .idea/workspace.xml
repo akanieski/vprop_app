@@ -61,6 +61,8 @@
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\misc\resetProjects.js" afterPath="" />
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\playswith.html" afterPath="" />
       <change type="DELETED" beforePath="F:\git\varsity\vprop_app\www\bower_components\angularjs\propagateClusterUpdate.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vprop_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,10 +85,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="1690" selection-end="1690" vertical-scroll-proportion="-12.423077" vertical-offset="255" max-vertical-offset="935">
+            <state line="36" column="66" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6386404" vertical-offset="255" max-vertical-offset="833">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spec.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/spec.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.807693" vertical-offset="255" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -101,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="27" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.92991453" vertical-offset="306" max-vertical-offset="986">
+            <state line="50" column="27" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="986">
               <folding />
             </state>
           </provider>
@@ -163,8 +174,8 @@
         <option value="$PROJECT_DIR$/www/js/main.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/site.js" />
         <option value="$PROJECT_DIR$/www/bower.json" />
-        <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/config.xml" />
+        <option value="$PROJECT_DIR$/www/index.html" />
       </list>
     </option>
   </component>
@@ -322,10 +333,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1066" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968238" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32968238" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973601" sideWeight="0.67031765" order="0" side_tool="false" content_ui="combo" />
@@ -387,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="1690" selection-end="1690" vertical-scroll-proportion="-12.423077" vertical-offset="255" max-vertical-offset="935">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/bower_components/angular-latest/src/Angular.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="5253" max-vertical-offset="23120">
@@ -403,7 +407,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="27" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.92991453" vertical-offset="306" max-vertical-offset="986">
+        <state line="50" column="27" selection-start="3670" selection-end="3670" vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/spec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="9.807693" vertical-offset="255" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="66" selection-start="1772" selection-end="1772" vertical-scroll-proportion="0.6386404" vertical-offset="255" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
