@@ -7,7 +7,8 @@ function LoginCtrl($scope, $http, $rootScope, $location) {
                 $scope.error = data.error;
             } else {
                 $rootScope.logged_in = true;
-                localStorage.setItem('user_account', JSON.stringify(data));
+                localStorage.setItem('logged_in', JSON.stringify(true));
+                localStorage.setItem('account_info', JSON.stringify(data));
                 $location.url('/');
             }
         });
